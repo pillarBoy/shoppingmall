@@ -1,27 +1,17 @@
 # shoppingmall
 
-> A Vue.js project
+> 项目启动说明
 
-## Build Setup
+## Build Setup （项目启动命令）
 
 ``` bash
-# install dependencies
+# 安装依赖 命令行运行
 npm install
 
-# serve with hot reload at localhost:8080
+# 浏览器打开url: http://localhost:8080 即可访问即可
 npm run dev
 
-# build for production with minification
+# build for production with minification (项目构建命令)
 npm run build
 
-# build for production and view the bundle analyzer report
-npm run build --report
-
-# run unit tests
-npm run unit
-
-# run all tests
-npm test
 ```
-
-For detailed explanation on how things work, checkout the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).

@@ -30,24 +30,14 @@ export default {
   },
 };
 </script>
-
-<!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
-h1, h2 {
-  font-weight: normal;
+<!-- sass 用法 style 标签 lang="scss" 自动使用sass语法编译，默认css -->
+<style lang="scss">
+@import "../styles/index.scss";
+.hello {
+  text-align: center;
+  font-size: pxToRem(14);
 }
-
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-li {
-  display: inline-block;
-  margin: 0 10px;
-}
-
-a {
-  color: #42b983;
+h1,h2 {
+  font-size: pxToRem(16);
 }
 </style>
