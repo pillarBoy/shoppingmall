@@ -4,6 +4,7 @@ import Carousel from './Carousel';
 import ProFullTitle from './ProFullTitle';
 import ThrPic from './ThrPic';
 import ProBox from './ProBox';
+import DynamicWin from './DynamicWin';
 import LoadMore from './LoadMore';
 
 export default {
@@ -14,4 +15,5 @@ export default {
   ProFullTitle,
   ThrPic,
   ProBox,
+  DynamicWin,
 };

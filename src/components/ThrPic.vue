@@ -24,6 +24,7 @@ export default {
 
 .thr_pic_part {
   padding: 0 pxToRem(30);
+  background: $baseWhite;
 
   .thr_big {
     width: pxToRem(326);

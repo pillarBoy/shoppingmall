@@ -17,7 +17,7 @@ export default {
 #content {
   position: absolute;
   left: 0;
-  top: pxToRem(95);
+  top: pxToRem(90);
   right: 0;
   bottom: 0;
   z-index: 1;
