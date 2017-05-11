@@ -1,0 +1,14 @@
+@import "./index.scss";
+.mint-header {
+  height: pxToRem(90);
+  padding: 0 pxToRem(30);
+  color: $baseWhite;
+  font-size: pxToRem(38);
+  background: linear-gradient($lightBlack, $deepBlack);
+}
+
+.mint-loadmore-top {
+  margin-top: -60px;
+  padding-bottom: pxToRem(10);
+  font-size: pxToRem(36);
+}

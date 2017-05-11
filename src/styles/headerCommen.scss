@@ -1,0 +1,31 @@
+@import "./index.scss";
+#header_part {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  z-index: 2;
+  height: pxToRem(90);
+  padding: 0 pxToRem(30);
+  color: $baseWhite;
+  background: linear-gradient($lightBlack, $deepBlack);
+
+  .title {
+    font-size: pxToRem(38);
+    text-align: center;
+    line-height: pxToRem(90);
+  }
+
+  .left-icon, .right-icon {
+    font-size: pxToRem(40);
+  }
+  .left-icon {
+    display: inline-block;
+    float: left;
+  }
+
+  .right-icon {
+    display: inline-block;
+    float: right;
+  }
+}
