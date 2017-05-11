@@ -15,6 +15,7 @@ export default {
   data() {
     return {
       test: 'test string',
+      test2: 'test crlf',
     };
   },
   methods: {

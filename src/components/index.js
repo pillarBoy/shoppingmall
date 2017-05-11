@@ -7,5 +7,11 @@ import ProBox from './ProBox';
 import LoadMore from './LoadMore';
 
 export default {
-  LoadMore, Header, Content, Carousel, ProFullTitle, ThrPic, ProBox,
+  LoadMore,
+  Header,
+  Content,
+  Carousel,
+  ProFullTitle,
+  ThrPic,
+  ProBox,
 };
