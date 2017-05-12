@@ -12,3 +12,25 @@
   padding-bottom: pxToRem(10);
   font-size: pxToRem(36);
 }
+
+.mint-tab-item-icon {
+  width: pxToRem(50);
+  height: pxToRem(50);
+}
+
+.mint-tab-item-label {
+  font-size: pxToRem(20);
+}
+
+.mint-tabbar {
+  top: 1px;
+  bottom: 1px;
+  background: $baseWhite;
+
+  &>.mint-tab-item {
+    color: $noActiveNav;
+  }
+  &>.mint-tab-item.is-selected {
+    color: $deepBlack20;
+  }
+}

@@ -2,6 +2,7 @@
 // (runtime-only or standalone) has been set in webpack.base.conf with an alias.
 import 'flex.css';
 import 'mint-ui/lib/style.css';
+import 'normalize.css';
 import Vue from 'vue';
 import MintUI from 'mint-ui';
 import router from './router';

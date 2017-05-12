@@ -71,6 +71,7 @@ export default {
 #Carousel {
   position: relative;
   height: pxToRem(460);
+  background: $baseWhite;
 
   .swipe_corner {
     position: absolute;

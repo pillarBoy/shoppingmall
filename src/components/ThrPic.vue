@@ -23,8 +23,9 @@ export default {
 @import "../styles/index.scss";
 
 .thr_pic_part {
-  padding: 0 pxToRem(30);
+  padding: 0 pxToRem(30) pxToRem(45);
   background: $baseWhite;
+  border-bottom: 1px solid $deepGray;
 
   .thr_big {
     width: pxToRem(326);
@@ -35,7 +36,7 @@ export default {
     width: pxToRem(360);
 
     &>:nth-child(1) {
-      margin-bottom: pxToRem(4);
+      margin-bottom: pxToRem(3);
     }
   }
 }

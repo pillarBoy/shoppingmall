@@ -19,8 +19,9 @@ export default {
   left: 0;
   top: pxToRem(90);
   right: 0;
-  bottom: 0;
+  bottom: pxToRem(97);
   z-index: 1;
+  padding-bottom: pxToRem(25);
   overflow: auto;
   -webkit-overflow-scrolling: touch;
 }

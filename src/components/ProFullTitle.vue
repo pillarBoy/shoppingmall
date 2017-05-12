@@ -23,13 +23,13 @@ export default {
 @import "../styles/index.scss";
 .pro_f_title {
   line-height: pxToRem(100);
-  border-top: pxToRem(1) solid $deepGrap;
+  border-top: pxToRem(1) solid $deepGray;
   font-size: pxToRem(32);
   font-weight: 500;
   text-align: center;
   background: $baseWhite;
   .to_r_3_icon {
-    margin-left: pxToRem(18);
+    margin-left: pxToRem(14);
     width: pxToRem(41);
     height: pxToRem(22);
     background: url(../assets/to_rt_3.png) no-repeat center center;

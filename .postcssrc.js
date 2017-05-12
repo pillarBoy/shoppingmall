@@ -8,15 +8,16 @@ module.exports = {
         'Last 2 versions',
         'IE 10'
       ]
-    }),
-    require('postcss-autoreset')({
-      reset: {
-        margin: 0,
-        padding: 0,
-        borderRadius: 0,
-        listStyle: 'none',
-        boxSizing: 'border-box'
-      }
     })
+    // ,
+    // require('postcss-autoreset')({
+    //   reset: {
+    //     margin: 0,
+    //     padding: 0,
+    //     borderRadius: 0,
+    //     listStyle: 'none',
+    //     boxSizing: 'border-box'
+    //   }
+    // })
   ]
 }

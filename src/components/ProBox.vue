@@ -1,12 +1,12 @@
 <template lang="html">
   <div class="pro_box">
-    <div>
+    <div class="el_rlt">
       <slot name="img"></slot>
       <div class="inner_title" v-if="innerTitle">
         {{innerTitle}}
       </div>
     </div>
-    <div class="down_title" v-if="downTitle || proMoney">
+    <div class="down_title" flex="dir:top" v-if="downTitle || proMoney">
       <div v-if="downTitle">
         {{downTitle}}
       </div>
@@ -30,7 +30,7 @@ export default {
 <style lang="scss">
 @import "../styles/index.scss";
 .pro_box {
-  position: relative;
+  // position: relative;
   & > div {
     display: flex;
   }
@@ -45,8 +45,16 @@ export default {
     background: $baseYellow;
   }
   img {
-    max-width: 100%;
-    max-height: 100%;
+    width: 100%;
+    // height: 100%;
+  }
+  .down_title {
+    text-align: center;
+    font-size: pxToRem(28);
+    line-height: pxToRem(50);
+    &>:nth-child(1) {
+      color: $fontGray;
+    }
   }
 }
 </style>
