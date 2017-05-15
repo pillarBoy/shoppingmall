@@ -45,6 +45,12 @@ body {
 .el_rlt {
   position: relative;
 }
+.lf {
+  float: left;
+}
+.rt {
+  float: right;
+}
 .white_bg {
   background: #fff;
 }

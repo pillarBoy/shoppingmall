@@ -48,43 +48,18 @@
       <!-- 人气商品 -->
       <div class="parting_ling_t white_bg">
         <v-pro-full-title :p-title="'人气商品'"></v-pro-full-title>
-        <div class="pro_down_win" flex="main:justify">
-          <v-pro-box
-            :innerTitle="'活动促销·返现5元'"
-            :downTitle="'家用空气净化器'"
-            :proMoney="255">
-            <img slot="img" src="../assets/down_pro_test.png" alt="">
-          </v-pro-box>
-          <v-pro-box
-            :innerTitle="'活动促销·返现5元'"
-            :downTitle="'家用空气净化器'"
-            :proMoney="255">
-            <img slot="img" src="../assets/down_pro_test.png" alt="">
-          </v-pro-box>
-          <v-pro-box
-            :innerTitle="'活动促销·返现5元'"
-            :downTitle="'家用空气净化器'"
-            :proMoney="255">
-            <img slot="img" src="../assets/down_pro_test.png" alt="">
-          </v-pro-box>
-          <v-pro-box
-            :innerTitle="'活动促销·返现5元'"
-            :downTitle="'家用空气净化器'"
-            :proMoney="255">
-            <img slot="img" src="../assets/down_pro_test.png" alt="">
-          </v-pro-box>
-          <v-pro-box
-            :innerTitle="'活动促销·返现5元'"
-            :downTitle="'家用空气净化器'"
-            :proMoney="255">
-            <img slot="img" src="../assets/down_pro_test.png" alt="">
-          </v-pro-box>
-          <v-pro-box
-            :innerTitle="'活动促销·返现5元'"
-            :downTitle="'家用空气净化器'"
-            :proMoney="255">
-            <img slot="img" src="../assets/down_pro_test.png" alt="">
-          </v-pro-box>
+        <div class="pro_down_win">
+
+          <div class="pro_item" v-for="n in 10"
+            :class="n%2===0 ? 'right_item' : 'left_item'">
+            <v-pro-box
+
+              :innerTitle="'活动促销·返现5元'"
+              :downTitle="'家用空气净化器'"
+              :proMoney="255">
+              <img slot="img" src="../assets/down_pro_test.png" alt="">
+            </v-pro-box>
+          </div>
         </div>
       </div>
     </v-content>
@@ -126,11 +101,21 @@ export default {
   }
 
   .pro_down_win {
+    margin: 0 pxToRem(30);
+    display: flex;
     flex-wrap: wrap;
-    padding: 0 pxToRem(30);
-    // &>* {
-    //   margin-bottom: pxToRem(10);
-    // }
+    justify-content: space-between;
+
+    .pro_item {
+      box-sizing: border-box;
+      width: 50%;
+    }
+    .left_item {
+      padding-right: pxToRem(15);
+    }
+    .right_item {
+      padding-left: pxToRem(15);
+    }
     .down_title {
       font-size: pxToRem(30);
       line-height: pxToRem(50) ;

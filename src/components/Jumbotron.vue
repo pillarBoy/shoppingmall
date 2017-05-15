@@ -19,6 +19,7 @@
   .jum_img {
     img {
       display: flex;
+      width: 100%;
     }
   }
 
@@ -32,7 +33,7 @@
       float: right;
     }
   }
-  
+
   .jum_l_title {
     font-size: pxToRem(30);
     h3,p {

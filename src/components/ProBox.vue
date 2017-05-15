@@ -1,6 +1,6 @@
 <template lang="html">
   <div class="pro_box">
-    <div class="el_rlt">
+    <div class="el_rlt" flex="">
       <slot name="img"></slot>
       <div class="inner_title" v-if="innerTitle">
         {{innerTitle}}
@@ -46,7 +46,6 @@ export default {
   }
   img {
     width: 100%;
-    // height: 100%;
   }
   .down_title {
     text-align: center;
