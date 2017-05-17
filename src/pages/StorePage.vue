@@ -51,10 +51,6 @@
         <v-pro-full-title :p-title="'人气商品'"></v-pro-full-title>
         <v-both-sides-win :products="banners"></v-both-sides-win>
       </div>
-      <h3>svg-test</h3>
-      <div>
-        <span class="icon-image2vector chg_color"></span>
-      </div>
     </v-content>
     <v-footer></v-footer>
   </div>
@@ -64,7 +60,7 @@
 export default {
   data() {
     return {
-      banners: [1, 2, 3, 4, 6, 5],
+      banners: [1, 2, 3, 4, 5, 6],
     };
   },
 };

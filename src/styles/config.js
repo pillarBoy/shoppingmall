@@ -1,12 +1,19 @@
 /*
-* 用于重置html fontsize 计算rem基数
-* 项目开始调用即可
-*/
+ * 用于重置html fontsize 计算rem基数
+ * 项目开始调用即可
+ */
 const config = () => {
   const docEl = document.documentElement;
   const fontEl = document.createElement('style');
   const metaEl = document.querySelector('meta[name="viewport"]');
-  const dpr = window.devicePixelRatio || 1;
+  const isAndroid = window.navigator.appVersion.match(/android/gi);
+  const isIPhone = window.navigator.appVersion.match(/(iphone|ipad)/gi);
+  let dpr = null;
+  if (isAndroid || isIPhone) {
+    dpr = window.devicePixelRatio;
+  } else {
+    dpr = 1;
+  }
   const scale = 1 / dpr;
   const rem = docEl.clientWidth * (dpr / 10);
   // 设置viewport，进行缩放，达到高清效果

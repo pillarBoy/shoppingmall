@@ -1,5 +1,5 @@
 <template lang="html">
-  <div id="footer" @click="test" :value="tab_test">
+  <div id="footer" :value="tab_test">
     <mt-tabbar v-model="tab_test">
       <mt-tab-item id="tab1" >
         <!-- <img slot="icon" src="../assets/store_icon.png" alt=""> -->
@@ -34,21 +34,6 @@ export default {
       vll: 'tab1',
     };
   },
-  methods: {
-    test() {
-      console.log(this.$el.getAttribute('value'));
-    },
-  },
-  // watch: {
-  //   tab_test(newVal, oldVal) {
-  //     console.log(newVal);
-  //     console.log(oldVal);
-  //     console.log(this.$el);
-  //   },
-  //   vll(v, o) {
-  //     console.log(v, o);
-  //   },
-  // },
 };
 </script>
 <style lang="scss">
