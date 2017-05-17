@@ -7,6 +7,7 @@ import ThrPic from './ThrPic';
 import ProBox from './ProBox';
 import DynamicWin from './DynamicWin';
 import Jumbotron from './Jumbotron';
+import BothSidesWin from './BothSidesWin';
 import LoadMore from './LoadMore';
 
 export default {
@@ -20,4 +21,5 @@ export default {
   ProBox,
   DynamicWin,
   Jumbotron,
+  BothSidesWin,
 };

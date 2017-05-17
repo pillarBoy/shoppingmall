@@ -9,6 +9,7 @@ import router from './router';
 import remConfig from './styles/config';
 import components from './components';
 
+import './font/style.css';
 import './styles/resetMint.scss';
 
 remConfig();

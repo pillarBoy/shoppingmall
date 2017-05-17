@@ -19,7 +19,9 @@
 }
 
 .mint-tab-item-label {
-  font-size: pxToRem(20);
+  text-align: center;
+  line-height: pxToRem(32);
+  font-size: pxToRem(28);
 }
 
 .mint-tabbar {

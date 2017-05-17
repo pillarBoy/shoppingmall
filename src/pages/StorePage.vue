@@ -45,22 +45,15 @@
           <div class="jum_r_title" slot="titleRight">￥699起</div>
         </v-jumbotron>
       </div>
+
       <!-- 人气商品 -->
       <div class="parting_ling_t white_bg">
         <v-pro-full-title :p-title="'人气商品'"></v-pro-full-title>
-        <div class="pro_down_win">
-
-          <div class="pro_item" v-for="n in 10"
-            :class="n%2===0 ? 'right_item' : 'left_item'">
-            <v-pro-box
-
-              :innerTitle="'活动促销·返现5元'"
-              :downTitle="'家用空气净化器'"
-              :proMoney="255">
-              <img slot="img" src="../assets/down_pro_test.png" alt="">
-            </v-pro-box>
-          </div>
-        </div>
+        <v-both-sides-win :products="banners"></v-both-sides-win>
+      </div>
+      <h3>svg-test</h3>
+      <div>
+        <span class="icon-image2vector chg_color"></span>
       </div>
     </v-content>
     <v-footer></v-footer>
@@ -79,6 +72,18 @@ export default {
 </script>
 <style lang="scss">
 @import "../styles/index.scss";
+
+.icon-image2vector:before {
+  content: "\e900";
+}
+
+$col: #f00 #0f0 !default;
+.chg_color {
+  color:nth($col, 1);
+  &:hover {
+    color:nth($col, 2);
+  }
+}
 
 #storePage {
   #content {
@@ -121,6 +126,21 @@ export default {
       line-height: pxToRem(50) ;
       margin-top: pxToRem(8);
       margin-bottom: pxToRem(27);
+    }
+  }
+  .pro_down_win_test {
+    margin: 0 pxToRem(30);
+    flex-wrap: wrap;
+
+    .pro_item {
+      box-sizing: border-box;
+      width: 50%;
+    }
+    .left_item {
+      padding-right: pxToRem(15);
+    }
+    .right_item {
+      padding-left: pxToRem(15);
     }
   }
 }
