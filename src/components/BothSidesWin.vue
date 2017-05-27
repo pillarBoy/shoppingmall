@@ -9,7 +9,8 @@
       <v-pro-box
         :innerTitle="'活动促销·返现5元'"
         :downTitle="'家用空气净化器'"
-        :proMoney="255">
+        :proMoney="255"
+        :t-title="index%2 === 0 ? '返现' : '赚钱'">
         <img slot="img" src="../assets/down_pro_test.png" alt="">
       </v-pro-box>
     </div>

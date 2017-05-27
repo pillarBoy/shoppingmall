@@ -1,13 +1,17 @@
 <template lang="html">
   <div id="Carousel" @touchstart="tchStart" @touchend="changeImg">
-    <mt-swipe
-      ref="swipe_test"
-      :auto="auto"
-      :defaultIndex="3"
-      :speed="speed"
-      :showIndicators="false">
-      <mt-swipe-item v-for="item in data" :key="item">{{item}}</mt-swipe-item>
-    </mt-swipe>
+    <div class="donot_bur">
+      <mt-swipe
+        ref="swipe_test"
+        :auto="auto"
+        :defaultIndex="0"
+        :speed="speed"
+        :showIndicators="false">
+        <mt-swipe-item v-for="item in data" :key="item">
+          <img :src="item" alt="">
+        </mt-swipe-item>
+      </mt-swipe>
+    </div>
     <span class="swipe_corner">{{activeNo}}/{{this.data.length}}</span>
   </div>
 </template>
@@ -71,12 +75,24 @@ export default {
 #Carousel {
   position: relative;
   height: pxToRem(460);
-  background: $baseWhite;
 
+  .donot_bur {
+    position: absolute;
+    height: pxToRem(460);
+    background: $baseWhite;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    right: 0;
+  }
+  img {
+    width: 100%;
+  }
   .swipe_corner {
     position: absolute;
     right: pxToRem(30);
     bottom: pxToRem(20);
+    z-index: 2;
     font-size: pxToRem(25);
   }
 }

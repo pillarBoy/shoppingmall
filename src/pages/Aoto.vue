@@ -5,8 +5,14 @@
       <div class="icon sch_b_icon" slot="right"></div>
     </mt-header>
     <v-content>
-      <div>
-        <v-carousel :auto="3000" :speed="500" :data="banners"></v-carousel>
+      <div class="parting_ling_t">
+        <v-carousel :auto="2000" :speed="500" :data="banners"></v-carousel>
+      </div>
+      <div>Lorem </div>
+      <!-- <div>test tt</div> -->
+      <div class="tts" flex="">
+        <span class="testss">111</span>
+        <img src="../assets/thr_b.png" alt="">
       </div>
       <div class="parting_ling_t">
         <v-pro-full-title :p-title="'圣诞狂欢'"></v-pro-full-title>
@@ -29,9 +35,9 @@
         </v-thr-pic>
       </div>
       <!-- 圣诞狂欢 -->
-      <v-dynamic-win></v-dynamic-win>
+      <!-- <v-dynamic-win></v-dynamic-win> -->
       <!-- 专题精选 -->
-      <div class="parting_ling_t">
+      <!-- <div class="parting_ling_t">
         <v-pro-full-title :p-title="'专题精选'"></v-pro-full-title>
         <v-jumbotron>
           <div slot="img">
@@ -43,22 +49,20 @@
           </div>
           <div class="jum_r_title" slot="titleRight">￥699起</div>
         </v-jumbotron>
-      </div>
+      </div> -->
 
       <!-- 人气商品 -->
-      <div class="parting_ling_t white_bg">
+      <!-- <div class="parting_ling_t white_bg">
         <v-pro-full-title :p-title="'人气商品'"></v-pro-full-title>
         <v-both-sides-win :products="banners"></v-both-sides-win>
-      </div>
+      </div> -->
     </v-content>
-    <v-footer></v-footer>
   </div>
 </template>
 
 <script>
 export default {
   data() {
-    /* eslint-disabled */
     return {
       banners: [
         require('../assets/banner01.png'),
@@ -71,24 +75,13 @@ export default {
     };
   },
 };
-
 </script>
+
 <style lang="scss">
 @import "../styles/index.scss";
 
-.icon-image2vector:before {
-  content: "\e900";
-}
-
-$col: #f00 #0f0 !default;
-.chg_color {
-  color:nth($col, 1);
-  &:hover {
-    color:nth($col, 2);
-  }
-}
-
 #storePage {
+  
   #content {
     background: $baseGray;
   }

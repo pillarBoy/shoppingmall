@@ -10,7 +10,7 @@
     <mt-tab-container class="dy_pic_part" v-model="active">
       <mt-tab-container-item class="more_auto" id="tab-container1">
         <div class="dy_item" v-for="n in 10" :key="n">
-          <v-pro-box :down-title="'智能手表'" :pro-money="199">
+          <v-pro-box :down-title="'智能手表'" :pro-money="199" :t-title="n%3 === 0 ? '赚钱' : ''">
             <img slot="img" src="../assets/er_ji1.png" alt="">
           </v-pro-box>
         </div>

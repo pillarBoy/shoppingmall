@@ -27,6 +27,14 @@ export default new Router({
           component: resolve => require(['@/pages/PageOne'], resolve),
           /* eslint-enable */
         },
+        {
+          path: '/paget',
+          name: 'paget',
+          // 此处 eslint-disable 两行注释 莫要删除，会报错
+          /* eslint-disable */
+          component: resolve => require(['@/pages/Aoto'], resolve),
+          /* eslint-enable */
+        },
       ],
     },
   ],

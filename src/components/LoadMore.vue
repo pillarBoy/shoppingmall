@@ -20,7 +20,7 @@ export default {
     return {
       topStatus: '',
       loading: false,
-      list: [1, 2, 4, 5, 6, 7, 5, 0, 3, 2, 2, 2, 4, 5, 6, 7, 5, 0, 3, 2, 2],
+      list: [1, 2],
     };
   },
   methods: {
