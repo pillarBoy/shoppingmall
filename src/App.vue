@@ -16,7 +16,9 @@ export default {
 body {
   height: 100%;
 }*/
-
+body {
+  background: url(./assets/banner01.png) no-repeat center cetner;
+}
 #app {
   letter-spacing: 2px;
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
